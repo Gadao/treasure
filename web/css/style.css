@@ -1,0 +1,224 @@
+@charset "utf-8";
+@import url("reset.css");
+
+/*
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 3.0 License
+
+Name       : Prolific
+Description: A two-column, fixed-width design with a bright color scheme.
+Version    : 1.0
+Released   : 20120719
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	color: #0000B6;	
+}
+
+a:hover {
+	color: #7070FF;
+}
+
+body {
+	color: #4D4D4D;
+	font-size: 13pt;
+	line-height: 2em;
+}
+
+#outer {
+	padding: 80px 0 0 0;
+	background: #EDE8DE;
+	box-shadow: inset 0px 0px 130px 0px rgba(70,48,25,0.7);
+}
+
+body,input {
+	font-family: "Open Sans", sans-serif;
+}
+
+br.clearfix {
+	clear: both;
+}
+
+h1,h2,h3,h4 {
+	font-weight: normal;
+}
+
+h2 {
+	font-size: 2.25em;
+}
+h5{
+	color:#0300FA;
+	font-size: 1.1em;
+}
+h2,h3,h4 {
+	margin-bottom: 1em;
+	color: #333;
+	font-family: Abel, sans-serif;
+}
+
+h3 {
+	font-size: 1.75em;
+	color:#FF1989;
+}
+
+h4 {
+	font-size: 1.2em;
+	color:#FF1C19;
+}
+
+strong {
+	color: #333;
+}
+
+img.alignleft {
+	float: left;
+	margin: 5px 30px 30px 0;
+	border-radius: 6px;
+}
+
+img.aligntop {
+	margin: 5px 0 20px 0;
+	border-radius: 6px;
+}
+
+p {
+	margin-bottom: 1.75em;
+}
+
+ul {
+	margin-bottom: 1.75em;
+}
+
+ul h4 {
+	margin-bottom: 0.4em;
+}
+
+ul {
+	list-style: none;
+}
+
+
+#page {
+	margin: 0;
+	width: 1100px;
+	padding: 40px 40px;
+	position: relative;
+	background: #FFF;
+	box-shadow: inset 0px 0px 3px 0px #ffffff, inset 0px 0px 250px 0px #d8d8d8, 0px 10px 20px 0px #D6CCBA;
+	text-shadow: 1px 1px 0px #ffffff;
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+}
+
+#content {
+	margin: 40px 50px;
+}
+
+#header {
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+	position: relative;
+	padding: 40px;
+	height: 90px;
+	background: #63B05E;
+	color: #FFF;
+	box-shadow: inset 0px -10px 50px 0px #53903E;
+	overflow: hidden;
+}
+
+#logo {
+	height: 180px;
+	left: 20px;
+	bottom: 0;
+	position: absolute;
+	text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+#logo a {
+	color: #FFF;
+	text-decoration: none;
+}
+
+#logo h1 {
+	font-family: Abel, sans-serif;
+	font-size: 3.5em;
+}
+
+#menu {
+    font-family: Abel,sans-serif;
+    height: 60px;
+    left: 30px;
+    margin: 0;
+    padding: 0 40px;
+    position: absolute;
+    text-align: left;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    top: 120px;
+    width: 1100px;
+}
+
+#menu a {
+    border: 0 solid #FFFFFF;
+    border-radius: 6px 6px 6px 6px;
+    color: #FFFFFF;
+    display: inline-block;
+    font-size: 1.25em;
+    height: 30px;
+    padding-bottom: 6px;
+    text-decoration: none;
+    width: 150px;
+    margin-left: 10px;
+}
+
+#menu a:hover {
+	background-color: #A3D8A0;
+}
+
+#menu ul {
+	list-style: none;
+}
+
+#menu ul li {
+	display: inline;
+	text-align: center;
+}
+
+#menu ul li.first {
+	padding-left: 0;
+}
+
+#col1 {
+	overflow: hidden;
+	width: 355px;
+	float: left;
+}
+
+#col2 {
+	width: 355px;
+	margin: 0 0 0 390px;
+	overflow: hidden;
+}
+
+#wrapper {
+	width: 1180px;
+	position: relative;
+	margin: 0 auto;
+}
+
+#footer {
+	text-align: center;
+	padding: 50px 0 130px 0;
+	color: #938D82;
+	text-shadow: 1px 1px 0px #ffffff;
+}
+
+#footer a {
+	color: #938D82;
+}

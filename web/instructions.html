@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <title>APP使用說明::樹德科技大學-校園尋寶大發現</title>
+        <link href="http://fonts.googleapis.com/css?family=Abel" rel="stylesheet" type="text/css" />
+        <meta ContentType=html/text; charset=utf-8>
+        <script src="./js/jquery-1.7.1.min.js"></script>
+        <script src="./js/jquery.slideshow.min.js"></script>
+        <link href="./css/style.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript">
+            $('document').ready(function(){
+                $('.slideShow').slideShow({
+                    interval: false
+                });
+            });
+        </script>
+        <style>
+            .slideShow {
+                width: 800px;
+                height: 600px;
+                position: relative;
+                overflow: hidden;
+                margin-top: -35px;
+                margin-left: 150px;
+                padding-bottom: 35px;
+            }
+
+            .slides {
+                position: absolute;
+                z-index: 10;
+            }
+
+            .slide-img {
+                width: 800px;
+                height: 600px;
+            }
+
+            #navigation {
+                text-shadow: none;
+            }
+
+            .navigation {
+                position: absolute;
+                z-index: 20;
+                right: 0px;
+                bottom: 0px;
+                margin: 0px 10px 20px 0px;
+            }
+
+            .navigation li {
+                display: inline;
+            }
+
+            .navigation a {
+                background: none repeat scroll 0 0 #27282A;
+                box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
+                color: #FFFFFF;
+                font-size: 11px;
+                margin: 0 2px;
+                padding: 3px 7px;
+                text-decoration: none;
+            }
+
+            .navigation a:focus {
+                outline: medium none;
+            }
+
+            .navigation a:hover,
+            .navigation .selected {
+                background: none repeat scroll 0 0 #DF424B;
+                color: #FFFFFF;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="outer">
+        <div id="wrapper">
+            <div id="header">
+                <div id="logo">
+                    <img src="./image/title.png"></img>
+                </div>
+                <div id="menu">
+                    <ul>
+                        <li><a href="index.html">活動首頁</a></li>
+                        <li><a href="instructions.html">APP使用說明</a></li>
+                        <li><a href="download.html">APP下載</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="page">
+                <div class="slideShow">
+                    <ul class="slides">
+                        <li class="slide"><img src="image/instructions/1.png" class="slide-img" /></a></li>
+                        <li class="slide"><img src="image/instructions/2.png" class="slide-img" /></a></li>
+                        <li class="slide"><img src="image/instructions/3.png" class="slide-img" /></a></li>
+                        <li class="slide"><img src="image/instructions/4.png" class="slide-img" /></a></li>
+                    </ul>
+                    <ul class="navigation" id="navigation">
+                        <li><a href="javascript:void(0);" class="page">1</a></li>
+                        <li><a href="javascript:void(0);" class="page">2</a></li>
+                        <li><a href="javascript:void(0);" class="page">3</a></li>
+                        <li><a href="javascript:void(0);" class="page">4</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            &copy;若對尋寶活動有相關疑問，歡迎前來「學務處課指組」，我們很樂意為您解答，讓您加滿油</br>
+            、尋寶去哦！ 加油地點：課外活動指導組（行政大禮堂二樓）/加油專線：07-615-8000#2152、2105
+        </div>
+        </div>
+    </body>
+</html>
