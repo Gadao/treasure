@@ -2,8 +2,8 @@
     require_once("../mobile/loader.php");
     $arr=array("0"=>"未通過","1"=>"通過");
     // print_r(sql_q("SELECT * FROM record"));
-     $sth=$db->prepare("SELECT * FROM record");
-     $sth->execute();
+    $sth=$db->prepare("SELECT * FROM record");
+    $sth->execute();
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 
@@ -13,13 +13,12 @@
         <title>樹德科技大學-校園尋寶大發現</title>
         <link href="http://fonts.googleapis.com/css?family=Abel" rel="stylesheet" type="text/css" />
         <meta ContentType=html/text; charset=utf-8>
-        <link href="./css/style.css" rel="stylesheet" type="text/css" />
+        <link href="../web/css/style.css" rel="stylesheet" type="text/css" />
         <script src="//code.jquery.com/jquery-1.10.2.js"></script>
-        <script type="text/javascript" src="js/jquery.tablesorter.js"></script>
-        <link rel="stylesheet" href="css/bootstrap.css">
+        <script type="text/javascript" src="../web/js/jquery.tablesorter.js"></script>
+        <link rel="stylesheet" href="../web/css/bootstrap.css">
         <script src="//code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
         <link rel="stylesheet" href="//code.jquery.com/ui/1.11.0/themes/smoothness/jquery-ui.css">
-        <script src="//code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
         <script >
         $(function(){
         $( ".dialog-message" ).dialog({
@@ -47,7 +46,15 @@
         <div id="wrapper">
             <div id="header">
                 <div id="logo">
-                    <img src="./image/title.png"></img>
+                    <img src="../web/image/title.png"></img>
+                </div>
+                <div id="menu">
+                    <ul>
+                        <li><a href="alldata.php">所有學生資料</a></li>
+                        <li><a href="insert.php">新增通關同學資料</a></li>
+                        <li><a href="successdata.php">系所通過成功率</a></li>
+                        <li><a href="lotto.php">開獎系統</a></li>
+                    </ul>
                 </div>
             </div>
             <div class="dialog-message" title="詳細資料">
