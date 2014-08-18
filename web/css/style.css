@@ -229,3 +229,27 @@ ul {
 .login_td{
 	padding-right:10px;
 }
+.win{
+	
+}
+#start{
+		border: 1px solid; 
+		border-color: #aaa 000 #000 #aaa;
+		width:10em;
+		height:3em; 
+		background: #fc0;
+}
+#end{
+		border: 1px solid; 
+		border-color: #aaa 000 #000 #aaa;
+		width:10em;
+		height:3em; 
+		background: #fc0;
+}
+#result{
+	height:130px;
+	width:800px;
+	border:2px solid ;
+	font-size:120px;
+	text-align:center; 
+}
