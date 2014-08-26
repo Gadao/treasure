@@ -36,8 +36,7 @@ function login( $uacc, $upwd ){
     if ( !count($record_id) ) {
         $addRecord = add_record(
             $login['uacc'],
-            $ou_group[1][1],
-            $ou_group[1][0]
+            $ou_group[1][1]
         );
         if ( $addRecord )
             $record_id = sql_q( $sql, array($login['uacc']) );
@@ -50,8 +49,7 @@ function login( $uacc, $upwd ){
         'record_id' => $record_id[0]['record_id'],
         'account'   => $login['uacc'],
         'name'      => $login['uname'],
-        'dep'       => $ou_group[1][1],
-        'year'      => $ou_group[1][0]
+        'dep'       => $ou_group[1][1]
     );
 
     # Define session
@@ -67,16 +65,14 @@ function logout() {
 }
 
 
-function add_record( $account, $dep, $year ) {
+function add_record( $account, $dep ) {
     $sql = "INSERT INTO record(
             account,
-            dep,
-            year
-        ) VALUES(?,?,?) ";
+            dep
+        ) VALUES(?,?) ";
     $array = array(
         $account,
-        $dep,
-        $year
+        $dep
     );
 
     return sql_i( $sql, $array );
@@ -100,7 +96,6 @@ function get_record() {
     unset( $result[0]['record_id'] );
     unset( $result[0]['account'] );
     unset( $result[0]['dep'] );
-    unset( $result[0]['year'] );
 
     return $result;
 }
