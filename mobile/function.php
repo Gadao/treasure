@@ -9,7 +9,7 @@ Returns:
 function login( $uacc, $upwd ){
     $login = (array)json_decode(
         file_get_contents(
-            'http://stu-acc.api.stu.edu.tw/acc/auth/uacc/'.$uacc.'/?upwd='.$upwd.'/apikey/59caf5091e5c1fadb987074e332da31f0d6db2ef',
+            'http://stu-acc.api.stu.edu.tw/acc/auth/uacc/'.$uacc.'/?upwd='.$upwd,
             true
         )
     );
