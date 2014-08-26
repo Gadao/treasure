@@ -9,7 +9,7 @@ Returns:
 function login( $uacc, $upwd ){
     $login = (array)json_decode(
         file_get_contents(
-            'http://apit.cedric.testapi-1.stu.edu.tw/acc/auth/uacc/'.$uacc.'/?upwd='.$upwd.'/apikey/59caf5091e5c1fadb987074e332da31f0d6db2ef',
+            'http://stu-acc.api.stu.edu.tw/acc/auth/uacc/'.$uacc.'/?upwd='.$upwd.'/apikey/59caf5091e5c1fadb987074e332da31f0d6db2ef',
             true
         )
     );
@@ -127,7 +127,7 @@ Returns:
     回傳數量
 */
 function count_record( $record_id ){
-    $sql = "SELECT edo,swn,cgcs,health,cgrs,obsce,mid,life,ecc,activity,alumnus,ccdc,scs,pam,sgas,seass,scams,lib,nac,tlrc,iad,upr,peo,lcc,mac FROM record WHERE record_id=? ";
+    $sql = "SELECT swd,sao,aca,mac,lcc,ecc,health,ccdc,buying,trafic FROM record WHERE record_id=? ";
     $result = sql_q( $sql, array( $record_id ) );
     $count=0;
     foreach ($result as $key ) {
